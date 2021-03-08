@@ -4,5 +4,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "50c142164e583252ae6a98b76321c9ed294d468b"
+  "gitHead": "50c142164e583252ae6a98b76321c9ed294d468b",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rizquadnan/learn-lerna.git"
+  }
 }
