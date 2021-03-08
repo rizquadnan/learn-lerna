@@ -11,14 +11,28 @@ var items = [
   ["Kamren Huffman", "kamren.huffman@email.com"],
 ];
 
-storiesOf("JTable", module).add("with 7 items", () => ({
-  components: { JTable },
-  template: `
+storiesOf("JTable", module)
+  .add("with 7 items", () => ({
+    components: { JTable },
+    template: `
       <JTable
         :items="items"
       />
     `,
-  data: () => ({
-    items,
-  }),
-}));
+    data: () => ({
+      items,
+    }),
+  }))
+  .add("with 7 items + header", () => ({
+    components: { JTable },
+    template: `
+      <JTable
+        :header="header"
+        :items="items"
+      />
+    `,
+    data: () => ({
+      header: ["Name", "Email"],
+      items,
+    }),
+  }));
